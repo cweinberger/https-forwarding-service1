@@ -16,4 +16,8 @@ public func routes(_ router: Router) throws {
     router.get("google-forward") { req in
         return try req.client().get("\(baseURL)/google")
     }
+
+    router.get("google-forward-map") { req in
+        return try req.client().get("\(baseURL)/google-map")
+    }
 }
